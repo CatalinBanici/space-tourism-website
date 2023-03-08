@@ -30,7 +30,9 @@ export default function DestinationLayout({ data }) {
 
   return (
     <>
-      <h4>Pick your destination</h4>
+      <h4>
+        <span>01</span>Pick your destination
+      </h4>
       <div>
         <img src={image} alt={destination.name} />
         <div>

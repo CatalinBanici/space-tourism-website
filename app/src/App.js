@@ -21,8 +21,11 @@ const router = createBrowserRouter(
         path="destination"
         element={<DestinationLayout data={data.destinations} />}
       />
-      <Route path="crew" element={<CrewLayout />} />
-      <Route path="technology" element={<TechnologyLayout />} />
+      <Route path="crew" element={<CrewLayout data={data.crew} />} />
+      <Route
+        path="technology"
+        element={<TechnologyLayout data={data.technology} />}
+      />
     </Route>
   )
 );
