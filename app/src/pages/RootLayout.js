@@ -28,12 +28,14 @@ export default function RootLayout() {
 
   return (
     <div className={"app-container " + backgroundImage}>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Outlet />
-      </main>
+      <div className="header-main-container">
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 }

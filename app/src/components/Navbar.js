@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/shared/logo.svg";
+import "../styles/navbar.css";
 
 export default function Navbar() {
   return (
@@ -9,25 +10,25 @@ export default function Navbar() {
         <ul>
           <li>
             <NavLink to="/">
-              <span>00</span>
+              <span aria-hidden="true">00</span>
               <span>Home</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="destination">
-              <span>01</span>
-              <span>Destinations</span>
+              <span aria-hidden="true">01</span>
+              <span>Destination</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="crew">
-              <span>02</span>
+              <span aria-hidden="true">02</span>
               <span>Crew</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="technology">
-              <span>03</span>
+              <span aria-hidden="true">03</span>
               <span>Technology</span>
             </NavLink>
           </li>

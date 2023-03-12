@@ -11,6 +11,8 @@ import DestinationLayout from "./pages/DestinationLayout";
 import CrewLayout from "./pages/CrewLayout";
 import TechnologyLayout from "./pages/TechnologyLayout";
 
+import "./styles/root.css";
+
 import data from "./data.json";
 
 const router = createBrowserRouter(
