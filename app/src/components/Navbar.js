@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/shared/logo.svg";
-import "../styles/navbar.css";
+import "../styles/header.css";
 
 export default function Navbar() {
   return (
