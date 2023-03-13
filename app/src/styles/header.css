@@ -59,11 +59,11 @@ header nav ul li a {
   display: flex;
   align-self: center;
   border-bottom: 3px solid hsl(231, 77%, 90%, 0%);
+  transition: 0.5s;
 }
 
 header nav ul li a:hover {
   border-bottom: 3px solid hsl(0, 0%, 100%, 0.4);
-  transition: 0.5s;
 }
 
 header nav ul li a.active {
