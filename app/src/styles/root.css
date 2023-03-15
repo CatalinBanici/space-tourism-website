@@ -48,6 +48,8 @@ body {
 
 .destination-background {
   background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .crew-background {
