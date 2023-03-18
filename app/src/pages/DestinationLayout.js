@@ -8,9 +8,11 @@ import "../styles/destination.css";
 export default function DestinationLayout({ data }) {
   const [destination, setDestination] = useState(data[0]);
   const [image, setImage] = useState(MoonImage);
+  const [activeClass, setActiveClass] = useState(0);
 
   function handleDestination(data, index) {
     setDestination(data[index]);
+    setActiveClass(index);
     switch (index) {
       case 0:
         setImage(MoonImage);
@@ -43,7 +45,10 @@ export default function DestinationLayout({ data }) {
             <nav className="destination-nav">
               <ul>
                 {data.map((item, index) => (
-                  <li key={item.name}>
+                  <li
+                    className={index === activeClass ? "nav-btn-active" : null}
+                    key={item.name}
+                  >
                     <button onClick={() => handleDestination(data, index)}>
                       {item.name}
                     </button>

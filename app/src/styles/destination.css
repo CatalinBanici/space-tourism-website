@@ -42,6 +42,11 @@
   justify-content: center;
 }
 
+.destination-image img {
+  height: min(40vw, 445px);
+  width: min(40vw, 445px);
+}
+
 .destination-details {
   width: 50%;
   display: flex;
@@ -72,6 +77,8 @@
 
 .destination-nav ul li {
   list-style-type: none;
+  transition: 0.5s;
+  border-bottom: 3px solid hsla(0, 0%, 100%, 0);
 }
 
 .destination-nav ul li button {
@@ -84,6 +91,15 @@
   font-weight: normal;
   letter-spacing: 2.7px;
   cursor: pointer;
+}
+
+.destination-nav ul li:hover {
+  border-bottom: 3px solid hsl(0, 0%, 100%, 0.4);
+}
+
+.destination-nav ul li.nav-btn-active {
+  border-bottom: 3px solid var(--White);
+  transition: 0.5s;
 }
 
 /* destination section */
@@ -100,7 +116,7 @@
 
 .destination-name {
   font-family: "Bellefair";
-  font-size: 100px;
+  font-size: min(8vw, 100px);
   font-weight: normal;
   color: var(--White);
   text-transform: uppercase;
