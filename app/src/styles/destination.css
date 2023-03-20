@@ -20,6 +20,7 @@
 .destination-title span {
   font-family: "BarlowCondensed";
   font-size: 28px;
+  font-weight: bold;
   color: hsl(0, 0%, 100%, 0.5);
   letter-spacing: 4.75px;
   margin-right: 20px;

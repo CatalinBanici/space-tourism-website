@@ -1,0 +1,125 @@
+.crew-container {
+  width: 84.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* crew body */
+
+.crew-body {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crew-body > div {
+  width: 90%;
+  height: 98.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* crew title */
+
+.crew-title {
+  font-family: "BarlowCondensed";
+  font-size: 28px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 4.75px;
+}
+
+.crew-title span {
+  font-family: "BarlowCondensed";
+  font-size: 28px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%, 0.5);
+  letter-spacing: 4.75px;
+  margin-right: 20px;
+}
+
+/* crew section */
+
+.crew-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 50%;
+}
+
+.crew-section h4 {
+  font-family: "Bellefair";
+  font-size: 32px;
+  font-weight: normal;
+  color: hsl(0, 0%, 100%, 0.5);
+  text-transform: uppercase;
+}
+
+.crew-section h3 {
+  font-family: "Bellefair";
+  font-size: min(4vw, 56px);
+  font-weight: normal;
+  width: min(50vw, 130%);
+  color: var(--White);
+  text-transform: uppercase;
+}
+
+.crew-section p {
+  font-family: "BarlowCondensed";
+  font-weight: normal;
+  color: var(--Grey);
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  width: 80%;
+}
+
+/* crew nav */
+
+.crew-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.crew-nav ul li {
+  list-style-type: none;
+}
+
+.crew-nav ul li button {
+  height: 15px;
+  width: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 100%, 0.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.crew-nav ul li button:hover {
+  background-color: hsl(0, 0%, 100%, 0.4);
+}
+
+.crew-nav ul li button.nav-btn-active {
+  background-color: var(--White);
+  transition: 0.5s;
+}
+
+/* crew image */
+
+.crew-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.crew-image img {
+  width: min(45vw, 600px);
+  height: 700px;
+  object-fit: contain;
+}
