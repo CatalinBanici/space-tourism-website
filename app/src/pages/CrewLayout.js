@@ -35,7 +35,7 @@ export default function CrewLayout({ data }) {
       <div className="crew-body">
         <div>
           <h4 className="crew-title">
-            <span>02</span>Meet your crew
+            <span aria-hidden="true">02</span>Meet your crew
           </h4>
           <section className="crew-section">
             <h4>{crew.role}</h4>
