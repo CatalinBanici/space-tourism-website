@@ -45,6 +45,8 @@
   flex-direction: row;
   gap: 70px;
   width: 50%;
+  height: 100%;
+  align-items: center;
 }
 
 /* technology nav */
@@ -99,7 +101,7 @@
 
 .technology-section h3 {
   font-family: "Bellefair";
-  font-size: 56px;
+  font-size: min(4vw, 56px);
   font-weight: normal;
   color: var(--White);
   text-transform: uppercase;
@@ -121,4 +123,10 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.technology-image img {
+  width: min(45vw, 600px);
+  object-fit: contain;
+  object-position: right;
 }
