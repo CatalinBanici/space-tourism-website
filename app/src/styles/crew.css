@@ -124,3 +124,59 @@
   object-fit: contain;
   object-position: bottom;
 }
+
+@media (max-width: 768px) {
+  .crew-title {
+    font-size: 20px;
+  }
+
+  .crew-title span {
+    font-size: 20px;
+  }
+
+  .crew-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .crew-body {
+    width: 100%;
+    height: 45%;
+  }
+
+  .crew-body div {
+    height: 96.5%;
+  }
+
+  .crew-section {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .crew-section h4 {
+    font-size: 28px;
+  }
+
+  .crew-section h3 {
+    width: unset;
+    font-size: 46px;
+  }
+
+  .crew-section p {
+    text-align: center;
+  }
+
+  .crew-nav {
+    align-self: center;
+  }
+
+  .crew-image {
+    width: 100%;
+    height: 55%;
+  }
+
+  .crew-image img {
+    height: 100%;
+  }
+}

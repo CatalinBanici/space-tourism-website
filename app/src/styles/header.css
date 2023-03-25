@@ -79,3 +79,21 @@ header nav ul li a span:nth-child(1) {
   margin: 10px;
   font-weight: bolder;
 }
+
+@media (max-width: 768px) {
+  header {
+    height: 96px;
+  }
+
+  header img {
+    margin: 0 2em;
+  }
+
+  header::after {
+    display: none;
+  }
+
+  header nav ul li a span:nth-child(1) {
+    display: none;
+  }
+}

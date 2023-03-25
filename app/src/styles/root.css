@@ -63,3 +63,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .home-background {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+
+  .destination-background {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+}

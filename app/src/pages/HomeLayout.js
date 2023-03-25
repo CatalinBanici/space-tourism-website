@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/home.css";
+import { useNavigate } from "react-router-dom";
 
 export default function HomeLayout() {
+  const navigate = useNavigate();
   return (
     <div className="home-container">
       <section className="home-section-container">
@@ -17,7 +19,7 @@ export default function HomeLayout() {
         </div>
       </section>
       <div className="button-container">
-        <button>Explore</button>
+        <button onClick={() => navigate("/destination")}>Explore</button>
       </div>
     </div>
   );
