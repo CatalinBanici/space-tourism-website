@@ -155,16 +155,17 @@
   }
 
   .crew-section h4 {
-    font-size: 28px;
+    font-size: min(5vw, 28px);
   }
 
   .crew-section h3 {
     width: unset;
-    font-size: 46px;
+    font-size: min(8vw, 46px);
   }
 
   .crew-section p {
     text-align: center;
+    line-height: min(5vw, 30px);
   }
 
   .crew-nav {
@@ -178,5 +179,6 @@
 
   .crew-image img {
     height: 100%;
+    width: 380px;
   }
 }

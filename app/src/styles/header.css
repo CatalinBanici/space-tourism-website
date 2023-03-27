@@ -85,8 +85,18 @@ header nav ul li a span:nth-child(1) {
     height: 96px;
   }
 
+  header nav {
+    padding-left: min(6vw, 3em);
+    padding-right: min(6vw, 3em);
+  }
+
+  header nav ul {
+    gap: min(3vw, 3em);
+  }
+
   header img {
-    margin: 0 2em;
+    margin-left: min(5vw, 2em);
+    margin-right: min(5vw, 2em);
   }
 
   header::after {

@@ -209,14 +209,14 @@
   }
 
   .destination-image {
-    height: 50%;
+    height: min(55vw, 50%);
     width: 90%;
     align-self: center;
   }
 
   .destination-image img {
-    width: 300px;
-    height: 300px;
+    width: min(45vw, 300px);
+    height: min(45vw, 300px);
   }
 
   .destination-details {
@@ -245,6 +245,7 @@
   .destination-description {
     margin: 10px;
     text-align: center;
+    line-height: min(5vw, 30px);
   }
 
   .destination-extra-details {

@@ -105,11 +105,12 @@
   }
 
   .home-section-container h1 {
-    font-size: 150px;
+    font-size: min(20vw, 150px);
   }
 
   .home-section-container p {
     text-align: center;
+    line-height: min(5vw, 30px);
   }
 
   .button-container {

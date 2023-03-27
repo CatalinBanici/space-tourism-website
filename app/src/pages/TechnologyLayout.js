@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import VehicleImage from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import SpacePort from "../assets/technology/image-spaceport-portrait.jpg";
 import CapsuleImage from "../assets/technology/image-space-capsule-portrait.jpg";
+import VehicleImgWide from "../assets/technology/image-launch-vehicle-landscape.jpg";
+import SpacePortWide from "../assets/technology/image-spaceport-landscape.jpg";
+import CapsuleImgWide from "../assets/technology/image-space-capsule-landscape.jpg";
 import "../styles/technology.css";
 
 export default function TechnologyLayout({ data }) {
   const [technology, setTechnology] = useState(data[0]);
-  const [image, setImage] = useState(VehicleImage);
+  const [image, setImage] = useState([VehicleImage, VehicleImgWide]);
   const [activeClass, setActiveClass] = useState(0);
 
   function handleTechnology(data, index) {
@@ -14,13 +17,13 @@ export default function TechnologyLayout({ data }) {
     setActiveClass(index);
     switch (index) {
       case 0:
-        setImage(VehicleImage);
+        setImage([VehicleImage, VehicleImgWide]);
         break;
       case 1:
-        setImage(SpacePort);
+        setImage([SpacePort, SpacePortWide]);
         break;
       case 2:
-        setImage(CapsuleImage);
+        setImage([CapsuleImage, CapsuleImgWide]);
         break;
       default:
         return null;
@@ -53,9 +56,10 @@ export default function TechnologyLayout({ data }) {
             <p>{technology.description}</p>
           </section>
         </div>
-        <div className="technology-image">
-          <img src={image} alt={technology.name} />
-        </div>
+        <picture className="technology-image">
+          <source srcSet={image[1]} media="(max-width: 768px)" />
+          <img src={image[0]} alt={technology.name} />
+        </picture>
       </div>
     </div>
   );
