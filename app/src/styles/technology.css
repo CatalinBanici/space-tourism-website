@@ -200,3 +200,49 @@
     object-position: center;
   }
 }
+
+@media (max-width: 420px) {
+  .technology-title {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3.75px;
+    margin-block: 10px;
+  }
+
+  .technology-title span {
+    font-size: 16px;
+  }
+
+  .technology-body {
+    margin-block: 20px;
+  }
+
+  .technology-body div {
+    margin-block: 20px;
+  }
+
+  .technology-nav {
+    margin-block: 20px;
+    gap: 20px;
+  }
+
+  .technology-nav ul li button {
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+  }
+
+  .technology-section {
+    height: 270px;
+    width: 90%;
+  }
+
+  .technology-section h3 {
+    font-size: 25px;
+  }
+
+  .technology-section p:nth-child(3) {
+    line-height: 25px;
+    width: 100%;
+  }
+}

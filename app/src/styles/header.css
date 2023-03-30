@@ -141,6 +141,7 @@ header nav ul li a span:nth-child(1) {
     height: 100vh;
     padding: 0;
     transition: 0.5s ease-out;
+    z-index: 5;
   }
 
   header nav ul {
