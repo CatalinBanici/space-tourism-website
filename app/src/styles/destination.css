@@ -261,3 +261,64 @@
     align-items: center;
   }
 }
+
+@media (max-width: 420px) {
+  .destination-title {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3.75px;
+    margin-block: 10px;
+  }
+
+  .destination-title span {
+    font-size: 16px;
+  }
+
+  .destination-image {
+    margin-block: 15px;
+  }
+
+  .destination-image img {
+    width: 175px;
+    height: 175px;
+  }
+
+  .destination-nav {
+    margin-block: 10px;
+  }
+
+  .destination-details div {
+    gap: unset;
+  }
+
+  .destination-name {
+    font-size: 50px;
+  }
+
+  .destination-description {
+    margin: 0;
+    line-height: 25px;
+  }
+
+  .destination-extra-details {
+    flex-direction: column;
+  }
+
+  .destination-distance {
+    margin: 10px;
+  }
+
+  .destination-distance h2,
+  h1 {
+    padding: 5px;
+  }
+
+  .destination-travel {
+    margin: 10px;
+  }
+
+  .destination-travel h2,
+  h1 {
+    padding: 5px;
+  }
+}

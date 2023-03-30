@@ -131,10 +131,14 @@ header nav ul li a span:nth-child(1) {
 }
 
 @media (max-width: 420px) {
+  header {
+    height: 90px;
+  }
+
   header nav {
     position: fixed;
     inset: 0 0 0 30%;
-    height: 1000px;
+    height: 100vh;
     padding: 0;
     transition: 0.5s ease-out;
   }

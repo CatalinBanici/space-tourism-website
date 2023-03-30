@@ -182,3 +182,28 @@
     width: 380px;
   }
 }
+
+@media (max-width: 420px) {
+  .crew-container {
+    flex-direction: column-reverse;
+  }
+
+  .crew-title {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3.75px;
+    margin-block: 10px;
+  }
+
+  .crew-title span {
+    font-size: 16px;
+  }
+
+  .crew-body {
+    height: unset;
+  }
+
+  .crew-body div {
+    height: unset;
+  }
+}

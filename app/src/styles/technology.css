@@ -152,6 +152,7 @@
     align-self: center;
     justify-content: flex-end;
     height: 100%;
+    width: 100%;
   }
 
   .technology-body div {
@@ -189,7 +190,7 @@
   }
 
   .technology-image {
-    width: 115%;
+    width: 100%;
     height: min(65vw, 50%);
   }
 
