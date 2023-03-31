@@ -155,7 +155,7 @@ header nav ul li a span:nth-child(1) {
 
   .button-hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 30px;
     z-index: 10;
