@@ -104,6 +104,10 @@ body {
   }
 
   .app-container {
+    height: 100vh;
+  }
+  .header-main-container {
     height: unset;
+    align-self: flex-start;
   }
 }

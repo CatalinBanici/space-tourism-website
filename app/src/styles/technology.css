@@ -192,6 +192,7 @@
   .technology-image {
     width: 100%;
     height: min(65vw, 50%);
+    justify-content: center;
   }
 
   .technology-image img {
