@@ -100,11 +100,11 @@ body {
   }
 
   body {
-    height: unset;
+    height: 100vh;
   }
 
   .app-container {
-    height: 100vh;
+    height: 100%;
   }
   .header-main-container {
     height: unset;
